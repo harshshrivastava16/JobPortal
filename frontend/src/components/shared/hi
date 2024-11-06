@@ -1,0 +1,253 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Galileo Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#EEEEEE] px-10 py-3">
+          <div class="flex items-center gap-4 text-black">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-black text-lg font-bold leading-tight tracking-[-0.015em]">JobFinder</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-black text-sm font-medium leading-normal" href="#">For Employers</a>
+              <a class="text-black text-sm font-medium leading-normal" href="#">Post a Job</a>
+              <a class="text-black text-sm font-medium leading-normal" href="#">Browse Categories</a>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-black text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Sign In</span>
+              </button>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#EEEEEE] text-black text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Sign Up</span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/40a034a1-a9d2-455c-bd1f-a52d37bc3e22.png");'
+                ></div>
+                <div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-black text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Find your next job faster with JobFinder
+                    </h1>
+                    <h2 class="text-black text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      Search hundreds of thousands of job listings to find the right one just for you
+                    </h2>
+                  </div>
+                  <label class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
+                    <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                      <div
+                        class="text-[#6B6B6B] flex border-none bg-[#EEEEEE] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                        data-icon="MagnifyingGlass"
+                        data-size="20px"
+                        data-weight="regular"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                          <path
+                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <input
+                        placeholder="Job title or keyword"
+                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-black focus:outline-0 focus:ring-0 border-none bg-[#EEEEEE] focus:border-none h-full placeholder:text-[#6B6B6B] px-4 rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+                        value=""
+                      />
+                      <div class="flex items-center justify-center rounded-r-xl border-l-0 border-none bg-[#EEEEEE] pr-2">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-black text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                        >
+                          <span class="truncate">Find Jobs</span>
+                        </button>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <h1
+                class="text-black tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+              >
+                Popular Job Categories
+              </h1>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3">
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/8712772e-669c-4c84-9b38-a213ead4e6ca.png");'
+                  ></div>
+                  <div>
+                    <p class="text-black text-base font-medium leading-normal">Data Analyst</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">2500+ jobs</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/stability/ff82f1b5-c491-4596-8c52-e86ac8e278e2.png");'
+                  ></div>
+                  <div>
+                    <p class="text-black text-base font-medium leading-normal">Front End Developer</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">1500+ jobs</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/632da5dd-a8d6-4592-b1e3-d6f9bb3c949b.png");'
+                  ></div>
+                  <div>
+                    <p class="text-black text-base font-medium leading-normal">Social Media Manager</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">1200+ jobs</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/stability/90b24a62-4669-4d52-96c0-97bf07a04331.png");'
+                  ></div>
+                  <div>
+                    <p class="text-black text-base font-medium leading-normal">Mobile App Developer</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">800+ jobs</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/e3441779-7d90-41e4-ae95-91784d453b4d.png");'
+                  ></div>
+                  <div>
+                    <p class="text-black text-base font-medium leading-normal">Video Game Designer</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">500+ jobs</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/cecfe92e-c94d-4eda-bd2a-a1231ad1cd91.png");'
+                  ></div>
+                  <div>
+                    <p class="text-black text-base font-medium leading-normal">SEO Specialist</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">300+ jobs</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/stability/fe9321f2-4c20-45a7-a6c0-94a2b60ce3b4.png");'
+                  ></div>
+                  <div>
+                    <p class="text-black text-base font-medium leading-normal">E-commerce Manager</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">200+ jobs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-black text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recently Posted Jobs</h2>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/783636a0-7daf-45e7-aaca-43f8fb4d0b11.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#6B6B6B] text-sm font-normal leading-normal">Remote</p>
+                  <p class="text-black text-lg font-bold leading-tight tracking-[-0.015em]">Senior Product Designer</p>
+                  <div class="flex items-end gap-3 justify-between"><p class="text-[#6B6B6B] text-base font-normal leading-normal">Apple</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/8de725f3-b75f-47ed-a28b-12a4e5c05386.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#6B6B6B] text-sm font-normal leading-normal">Remote</p>
+                  <p class="text-black text-lg font-bold leading-tight tracking-[-0.015em]">Marketing Manager</p>
+                  <div class="flex items-end gap-3 justify-between"><p class="text-[#6B6B6B] text-base font-normal leading-normal">Google</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/9235b2c2-92f9-4d16-a098-c0c0c5fb5730.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#6B6B6B] text-sm font-normal leading-normal">Remote</p>
+                  <p class="text-black text-lg font-bold leading-tight tracking-[-0.015em]">iOS Developer</p>
+                  <div class="flex items-end gap-3 justify-between"><p class="text-[#6B6B6B] text-base font-normal leading-normal">Facebook</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/f95b089e-c626-4692-a497-5ae9a5e7156a.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#6B6B6B] text-sm font-normal leading-normal">Remote</p>
+                  <p class="text-black text-lg font-bold leading-tight tracking-[-0.015em]">UX Researcher</p>
+                  <div class="flex items-end gap-3 justify-between"><p class="text-[#6B6B6B] text-base font-normal leading-normal">Twitter</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#6B6B6B] text-base font-normal leading-normal min-w-40" href="#">About</a>
+                <a class="text-[#6B6B6B] text-base font-normal leading-normal min-w-40" href="#">Blog</a>
+                <a class="text-[#6B6B6B] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+                <a class="text-[#6B6B6B] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+              </div>
+              <p class="text-[#6B6B6B] text-base font-normal leading-normal">@ 2023 JobFinder</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
