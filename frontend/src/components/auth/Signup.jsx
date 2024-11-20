@@ -9,7 +9,7 @@ import Navbar from "../shared/Navbar";
 import Footer from "../shared/Footer";
 import { Loader2 } from 'lucide-react'; // Import Loader2
 
-const SignUp = () => {
+const Signup = () => {
   const [input, setInput] = useState({
     fullname: "",
     email: "",
@@ -191,4 +191,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Signup;

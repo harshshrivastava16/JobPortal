@@ -2,7 +2,7 @@ import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/Home'
 import Login from './components/auth/Login'
-import SignUp from './components/auth/SignUp'
+import Signup from './components/auth/Signup'
 import Browse from './components/shared/Browse'
 import Jobs from './components/shared/Jobs'
 import Profile from './components/shared/Profile'
@@ -29,7 +29,7 @@ const appRouter = createBrowserRouter([
   {
 
     path:'/signup',
-    element:<SignUp/>
+    element:<Signup/>
   },
 {
   path:'/jobs',
