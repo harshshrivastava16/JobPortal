@@ -51,7 +51,7 @@ function Footer() {
       <div className="h-[1px] min-w-max bg-slate-600"></div>
       <div className="bg-black text-white py-4">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-          <p className="text-sm font-semibold">Developed by Harsh</p>
+          <p className="text-sm font-semibold pl-3">Developed by Harsh</p>
           <div className="flex justify-center md:justify-start space-x-4 mt-2 md:mt-0">
             <a href="https://www.linkedin.com/in/harsh-shrivastava-8479b7250/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className='h-8 hover:text-red-600 cursor-pointer' />
@@ -60,7 +60,7 @@ function Footer() {
               <FaGithub className='h-8 hover:text-red-600 cursor-pointer' />
             </a>
           </div>
-          <p className="text-sm font-semibold mt-2 md:mt-0">© {new Date().getFullYear()} Harsh. All rights reserved.</p>
+          <p className="text-sm font-semibold mt-2 pr-3 md:mt-0">© {new Date().getFullYear()} Harsh. All rights reserved.</p>
         </div>
       </div>
     </>

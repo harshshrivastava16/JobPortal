@@ -66,23 +66,24 @@ const JobCards = () => {
 
     return (
         <div className="bg-black p-8">
-            <h1 className='text-white text-4xl font-semibold mb-6'>Recently Posted Jobs</h1>
-            <div className="grid grid-cols-1 rounded-[10px] sm:grid-cols-2 md:grid-cols-3 gap-6">
-                {jobs.map((job, index) => (
-                    <div key={index} className="bg-[#111827] p-6 rounded-[10px] shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <h2 className='text-xl font-semibold text-white mb-2'>{job.company}</h2>
-                        <p className='text-gray-400 mb-1'>{job.city}, India</p>
-                        <p className='text-lg font-semibold text-white mb-2'>{job.title}</p>
-                        <p className='text-gray-300 mb-4'>{job.description}</p>
-                        <div className="flex flex-col sm:flex-row justify-between items-start">
-                            <p className='text-gray-300'>Positions: <span className='font-semibold'>{job.positions}</span></p>
-                            <p className='text-gray-300'>Package: <span className='font-semibold'>{job.packageLPA} LPA</span></p>
-                            <p className={`text-sm font-medium ${job.jobType === 'Full-Time' ? 'text-green-400' : 'text-yellow-400'}`}>{job.jobType}</p>
-                        </div>
+        <h1 className='text-white text-4xl font-semibold mb-6'>Recently Posted Jobs</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {jobs.map((job, index) => (
+                <div key={index} className="bg-[#111827] p-6 rounded-[10px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h2 className='text-xl font-semibold text-white mb-2'>{job.company}</h2>
+                    <p className='text-gray-400 mb-1'>{job.city}, India</p>
+                    <p className='text-lg font-semibold text-white mb-2'>{job.title}</p>
+                    <p className='text-gray-300 mb-4'>{job.description}</p>
+                    <div className="flex flex-col sm:flex-row justify-between items-start">
+                        <p className='text-gray-300'>Positions: <span className='font-semibold'>{job.positions}</span></p>
+                        <p className='text-gray-300'>Package: <span className='font-semibold'>{job.packageLPA} LPA</span></p>
+                        <p className={`text-sm font-medium ${job.jobType === 'Full-Time' ? 'text-green-400' : 'text-yellow-400'}`}>{job.jobType}</p>
                     </div>
-                ))}
-            </div>
+                </div>
+            ))}
         </div>
+    </div>
+    
     );
 };
 

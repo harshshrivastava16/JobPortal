@@ -24,21 +24,26 @@ const Category = () => {
 
   return (
     <div className="bg-black pt-[60px] px-5 pl-10">
-      <h1 className="text-white text-4xl font-bold mb-5">Popular Job Categories</h1>
-      <div className="grid grid-cols-4 gap-6">
-        {jobs.map((job, index) => (
-          <div
-            key={index}
-            onClick={() => searchJobHandler(job.jobTitle)}
-            className="cursor-pointer hover:opacity-90 transition-opacity duration-200 p-4 bg-[#212121] rounded-lg text-center text-white"
-          >
-            <img src={job.imageSrc} alt={job.jobTitle} className="h-32 w-full object-cover rounded-md mb-3" />
-            <h2 className="text-xl font-semibold">{job.jobTitle}</h2>
-            <p className="text-gray-400">{job.numberOfJobs} jobs</p>
-          </div>
-        ))}
+  <h1 className="text-white text-4xl font-bold mb-5">Popular Job Categories</h1>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    {jobs.map((job, index) => (
+      <div
+        key={index}
+        onClick={() => searchJobHandler(job.jobTitle)}
+        className="cursor-pointer hover:opacity-90 transition-opacity duration-200 p-4 bg-[#212121] rounded-lg text-center text-white"
+      >
+        <img
+          src={job.imageSrc}
+          alt={job.jobTitle}
+          className="h-32 w-full object-cover rounded-md mb-3"
+        />
+        <h2 className="text-xl font-semibold">{job.jobTitle}</h2>
+        <p className="text-gray-400">{job.numberOfJobs} jobs</p>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+
   );
 };
 

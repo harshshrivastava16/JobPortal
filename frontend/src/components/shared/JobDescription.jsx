@@ -58,74 +58,74 @@ const JobDescription = () => {
 
     return (
         <div className="bg-black">
-            <Navbar/>
-            <div className="max-w-5xl mx-auto my-10 p-6 bg-gray-800 text-white shadow-lg rounded-lg">
-    <div className="flex items-center justify-between">
-        <div>
-            <h1 className="font-semibold text-3xl text-gray-100">{singleJob?.title}</h1>
-            <div className="flex items-center gap-3 mt-4">
+        <Navbar />
+        <div className="max-w-5xl mx-auto my-10 p-6 bg-gray-800 text-white shadow-lg rounded-lg">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="mb-6 md:mb-0">
+              <h1 className="font-semibold text-3xl text-gray-100">{singleJob?.title}</h1>
+              <div className="flex items-center gap-3 mt-4">
                 <span className="px-3 py-1 bg-blue-700 bg-opacity-25 text-blue-400 font-medium text-sm rounded-full">
-                    {singleJob?.position} Positions
+                  {singleJob?.position} Positions
                 </span>
                 <span className="px-3 py-1 bg-red-700 bg-opacity-25 text-red-400 font-medium text-sm rounded-full">
-                    {singleJob?.jobType}
+                  {singleJob?.jobType}
                 </span>
                 <span className="px-3 py-1 bg-purple-700 bg-opacity-25 text-purple-400 font-medium text-sm rounded-full">
-                    {singleJob?.salary} LPA
+                  {singleJob?.salary} LPA
                 </span>
+              </div>
             </div>
-        </div>
-        <button
-            onClick={!isApplied ? applyJobHandler : null}
-            disabled={isApplied}
-            className={`px-5 py-2 rounded-lg font-semibold transition duration-200 text-sm ${
+            <button
+              onClick={!isApplied ? applyJobHandler : null}
+              disabled={isApplied}
+              className={`px-5 py-2 rounded-lg font-semibold transition duration-200 text-sm ${
                 isApplied
-                    ? 'bg-gray-700 cursor-not-allowed text-gray-400'
-                    : 'bg-red-600 hover:bg-red-500 text-white'
-            }`}
-        >
-            {isApplied ? 'Already Applied' : 'Apply Now'}
-        </button>
-    </div>
-
-    <h2 className="border-b border-gray-600 font-semibold py-5 mt-8 text-lg text-gray-100">
-        Job Description
-    </h2>
-
-    <div className="my-6 space-y-4 text-gray-300">
-        <p>
-            <strong className="text-gray-400">Role:</strong>
-            <span className="pl-4">{singleJob?.title}</span>
-        </p>
-        <p>
-            <strong className="text-gray-400">Location:</strong>
-            <span className="pl-4">{singleJob?.location}</span>
-        </p>
-        <p>
-            <strong className="text-gray-400">Description:</strong>
-            <span className="pl-4">{singleJob?.description}</span>
-        </p>
-        <p>
-            <strong className="text-gray-400">Experience:</strong>
-            <span className="pl-4">{singleJob?.experience} yrs</span>
-        </p>
-        <p>
-            <strong className="text-gray-400">Salary:</strong>
-            <span className="pl-4">{singleJob?.salary} LPA</span>
-        </p>
-        <p>
-            <strong className="text-gray-400">Total Applicants:</strong>
-            <span className="pl-4">{singleJob?.applications?.length || 0}</span>
-        </p>
-        <p>
-            <strong className="text-gray-400">Posted Date:</strong>
-            <span className="pl-4">{singleJob?.createdAt?.split("T")[0]}</span>
-        </p>
-    </div>
-</div>
-
-        <Footer/>
+                  ? 'bg-gray-700 cursor-not-allowed text-gray-400'
+                  : 'bg-red-600 hover:bg-red-500 text-white'
+              }`}
+            >
+              {isApplied ? 'Already Applied' : 'Apply Now'}
+            </button>
+          </div>
+      
+          <h2 className="border-b border-gray-600 font-semibold py-5 mt-8 text-lg text-gray-100">
+            Job Description
+          </h2>
+      
+          <div className="my-6 space-y-4 text-gray-300">
+            <p>
+              <strong className="text-gray-400">Role:</strong>
+              <span className="pl-4">{singleJob?.title}</span>
+            </p>
+            <p>
+              <strong className="text-gray-400">Location:</strong>
+              <span className="pl-4">{singleJob?.location}</span>
+            </p>
+            <p>
+              <strong className="text-gray-400">Description:</strong>
+              <span className="pl-4">{singleJob?.description}</span>
+            </p>
+            <p>
+              <strong className="text-gray-400">Experience:</strong>
+              <span className="pl-4">{singleJob?.experience} yrs</span>
+            </p>
+            <p>
+              <strong className="text-gray-400">Salary:</strong>
+              <span className="pl-4">{singleJob?.salary} LPA</span>
+            </p>
+            <p>
+              <strong className="text-gray-400">Total Applicants:</strong>
+              <span className="pl-4">{singleJob?.applications?.length || 0}</span>
+            </p>
+            <p>
+              <strong className="text-gray-400">Posted Date:</strong>
+              <span className="pl-4">{singleJob?.createdAt?.split("T")[0]}</span>
+            </p>
+          </div>
         </div>
+        <Footer />
+      </div>
+      
     );
 };
 

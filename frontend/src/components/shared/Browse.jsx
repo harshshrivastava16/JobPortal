@@ -19,22 +19,24 @@ const Browse = () => {
     },[])
     return (
         <div className='bg-black'>
-            <Navbar/>
-            <div className='max-w-7xl mx-auto py-10 bg-black'>
-                <h1 className='font-bold text-xl text-white pl-10 my-10'>Search Results ({allJobs.length})</h1>
-                <div className='grid grid-cols-3 gap-4'>
-                    {
-                        allJobs.map((job) => {
-                            return (
-                                <Job key={job._id} job={job}/>
-                            )
-                        })
-                    }
-                </div>
-
+        <Navbar />
+        <div className='max-w-7xl mx-auto py-10 bg-black'>
+            <h1 className='font-bold text-xl text-white pl-10 my-10'>
+                Search Results ({allJobs.length})
+            </h1>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                {
+                    allJobs.map((job) => {
+                        return (
+                            <Job key={job._id} job={job} />
+                        )
+                    })
+                }
             </div>
-            <Footer/>
         </div>
+        <Footer />
+    </div>
+    
     )
 }
 

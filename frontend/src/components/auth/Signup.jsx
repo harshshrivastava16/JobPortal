@@ -70,7 +70,7 @@ const Signup = () => {
   return (
     <>
     <Navbar/>
-    <div className="flex justify-center items-center min-h-screen bg-black">
+    <div className="flex justify-center items-center min-h-screen bg-black mb-[-40px]">
       <div className="bg-[#111827] p-8 rounded-lg shadow-lg mt-[20px] mb-4 max-w-md w-full">
         <h2 className="text-2xl font-bold mb-4 text-center text-white">Sign Up</h2>
 

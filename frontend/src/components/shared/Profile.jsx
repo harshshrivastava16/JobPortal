@@ -60,32 +60,44 @@ const Profile = () => {
         
         {/* Skills Section */}
         <div className='my-6'>
-          <h2 className='text-xl font-semibold mb-2'>Skills</h2>
-          <div className='flex flex-wrap'>
-            {user?.profile?.skills?.length > 0 ? user?.profile?.skills.map((item, index) => (
-              <span key={index} className="bg-red-500 text-white rounded-full px-4 py-1 m-1 text-sm shadow-lg transform hover:scale-105 transition-transform">
-                {item}
-              </span>
-            )) : <span className='text-gray-400'>N/A</span>}
-          </div>
-        </div>
-        
+  <h2 className='text-xl font-semibold mb-2'>Skills</h2>
+  <div className='flex flex-wrap'>
+    {/* Check if skills exist */}
+    {user?.profile?.skills?.length > 0 
+      ? user.profile.skills.map((item, index) => (
+          <span
+            key={index}
+            className="bg-red-500 text-white rounded-full px-4 py-1 m-1 text-sm shadow-lg transform hover:scale-105 transition-transform"
+          >
+            {item} {/* This prints each skill without quotes or brackets */}
+          </span>
+        ))
+      : <span className='text-gray-400'>N/A</span>
+    }
+  </div>
+</div>
+
         {/* Resume Section */}
         <div className='my-6'>
-          <label className='text-lg font-semibold mb-2'>Resume</label>
-          {isResumeAvailable ? (
-            <a 
-              target='_blank' 
-              rel='noopener noreferrer' 
-              href={user?.profile?.resume} 
-              className='text-blue-400 hover:underline transition duration-300'
-            >
-              {user?.profile?.resume || 'View Resume'}
-            </a>
-          ) : (
-            <span className='text-gray-400'>N/A</span>
-          )}
-        </div>
+  <label className='text-lg font-semibold mb-2'>Resume : </label>
+
+  {isResumeAvailable ? (
+    <a 
+      target='_blank' 
+      rel='noopener noreferrer' 
+      href={user?.profile?.resume} 
+      className='text-blue-400 hover:underline transition duration-300'
+    >
+      {/* Extracting the filename from the URL */}
+      {user?.profile?.resume
+        ? user.profile.resume.substring(user.profile.resume.lastIndexOf("/") + 1) // Extract filename
+        : 'View Resume'}
+    </a>
+  ) : (
+    <span className='text-gray-400'>N/A</span>
+  )}
+</div>
+
       </div>
 
       {/* Applied Jobs Section */}

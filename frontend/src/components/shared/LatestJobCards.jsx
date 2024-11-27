@@ -6,16 +6,17 @@ const LatestJobCards = ({ job }) => {
     return (
         <div
     onClick={() => navigate(`/description/${job._id}`)}
-    className="p-6 rounded-lg shadow-md bg-gray-800 border border-gray-700 cursor-pointer transition-transform duration-200 hover:shadow-lg hover:-translate-y-1"
+    className="p-6 rounded-lg shadow-md bg-gray-800 border border-gray-700 cursor-pointer transition-transform duration-200 hover:shadow-lg hover:-translate-y-1 hover:bg-gray-700"
+    aria-label={`View details for job at ${job?.company?.name} as a ${job?.title}`}
 >
     <div>
-        <h1 className="font-semibold text-lg text-white">{job?.company?.name}</h1>
+        <h1 className="font-semibold text-lg text-white">{job?.company?.name || 'Company Name'}</h1>
         <p className="text-sm text-gray-400">India</p>
     </div>
 
     <div className="my-4">
-        <h1 className="font-bold text-xl text-white">{job?.title}</h1>
-        <p className="text-sm text-gray-300 mt-1">{job?.description}</p>
+        <h1 className="font-bold text-xl text-white">{job?.title || 'Job Title'}</h1>
+        <p className="text-sm text-gray-300 mt-1">{job?.description || 'Job description not available'}</p>
     </div>
 
     <div className="flex items-center gap-2 mt-4">
@@ -30,6 +31,7 @@ const LatestJobCards = ({ job }) => {
         </span>
     </div>
 </div>
+
 
     );
 };
